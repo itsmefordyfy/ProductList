@@ -1,8 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import ProductList from './src/ProductList';
-import Cart from './src/Cart';
+import Home from './src/Home';
 
 // Create a stack navigator
 const Stack = createStackNavigator();
@@ -11,8 +10,7 @@ const App: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="ProductList" component={ProductList} />
-        <Stack.Screen name="Cart" component={Cart} />
+        <Stack.Screen name="Shoppy" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
